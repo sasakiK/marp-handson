@@ -6,49 +6,46 @@ paginate: true
 footer: Python Dash hands-on
 ---
 
-<style>
-section {
-    background: #2A2B25;
-    color:#FFFF;
-    font-family: 'Noto Sans CJK JP';
-    justify-content: flex-start;
-}
-h1{
-    color:#D5EBDC;
-}
-p{
-    color:#D5EBDC;
-}
-/* ul {
-    list-style-image: url('assets/images/substract.png');
-    list-style-type: dot;
-} */
-li {
-	list-style-type: none;
-}
-li:before {
-    content: '';
-    width: 6px;
-    height: 6px;
-    display: inline-block;
-    border-radius: 100%;
-    background: grey;
-    position: relative;
-    left: -15px;
-    top: -5px;
-}
-</style>
 <!-- size: 4:3 -->
 
+<style>
+    section {
+        background: #2A2B25;
+        color:#FFFF;
+        font-family: 'Noto Sans CJK JP';
+        justify-content: flex-start;
+    }
+    h1{
+        color:#D5EBDC;
+    }
+    p{
+        color:#D5EBDC;
+    }
+    li {
+        list-style-type: none;
+    }
+    li:before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        display: inline-block;
+        border-radius: 100%;
+        background: grey;
+        position: relative;
+        left: -15px;
+        top: -5px;
+    }
+</style>
+
 <style scoped>
-section {
-    justify-content: center;
-}
-p{
-    text-align: center;
-    margin-top: 10%;
-    font-size: 18px;
-}
+    section {
+        justify-content: center;
+    }
+    p{
+        text-align: center;
+        margin-top: 10%;
+        font-size: 18px;
+    }
 </style>
 
 # Dash Hands-on
@@ -95,10 +92,22 @@ h6{
 ## ![height:150px](/assets/images/dash-logo-300.png)
 
 - PythonのWebアプリケーションフレームワークの一つ
-    - pythonだけで完結する
-- 2015年に初めて公開された
+    - pythonだけで完結する(Rでもかけるらしい)
+    - Dash自体はFlask、Plotly.js、React.jsでできてる
 
 ###### ※ フレームワーク : 枠組み、骨組み、組織、体制
+
+---
+
+# Dashとは
+
+- Dashで作られたいろんなアプリがあるGallery
+    - [Dash App Gallery](https://dash-gallery.plotly.host/Portal/)
+- Oil and Gas Ternary Map
+
+![gif](./assets/gif/dash_app_sample.gif)
+
+
 
 ---
 
@@ -140,3 +149,4 @@ def update_output(input_value):
 if __name__ == '__main__':
     app.run_server(debug=True)
 ```
+
